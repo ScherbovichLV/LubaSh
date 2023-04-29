@@ -16,6 +16,13 @@ a
   text-decoration: none
   color: black
 
+button
+  cursor: pointer
+  border: none
+  padding: 0
+  margin: 0
+  background-color: transparent
+
 $color-sand: #ceb5a7
 $color-late: #92828d
 $color-green: #519872
@@ -59,7 +66,8 @@ $color-vine: #3b252c
     &__items
       min-width: 200px
       min-height: 234px
-      background-color: $color-green
+      border: 3px solid $color-green
+      background-color: #E6E6E6
       border-radius: 15px
       filter: drop-shadow(6px 6px 6px $color-lilac)
     &__text
@@ -67,7 +75,7 @@ $color-vine: #3b252c
       line-height: 38px
       text-align: center
       font-weight: 600
-      color: white
+      color: $color-vine
     &__link
       position: absolute
       top: 0
@@ -89,7 +97,74 @@ $color-vine: #3b252c
   &__socials
     justify-content: center
 
+.header
+  width: 100%
+  position: fixed
+  z-index: 1
+  background-color: white
+  &__nav
+    padding: 40px 60px
 
+.nav
+  justify-content: space-between
+  &__menu-item:not(:last-child)
+    margin-right: 60px
+  &__menu-item
+    font-weight: 700
+    font-size: 24px
+    line-height: 29px
+    color: $color-vine
+
+.section
+  background-color: #E6E6E6
+
+.container
+  margin: 0 auto
+  padding: 60px
+  padding-top: 140px
+  z-index: 0
+
+.card
+  padding: 30px
+  background-color: rgba(206, 181, 167, 0.3)
+  // border: 1px solid $color-lilac
+  border-radius: 20px
+  margin-bottom: 40px
+  &__image
+    margin-right: 50px
+  &__pic
+    width: 290px
+  &__title
+    font-weight: 700
+    font-size: 32px
+    line-height: 38px
+    color: black
+    margin-bottom: 20px
+  &__text
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+  &__description
+    flex-direction: column
+    justify-content: space-between
+  &__button
+    padding: 14px 44px
+    text-align: center
+    background-color: $color-green
+    border-radius: 20px
+    color: #E6E6E6
+    align-self: flex-end
+
+// .animation
+//   animation-fill-mode:
+//   animation: zoomIn
+//   animation-duration: 2s
+//   &__2
+//     animation-delay: 1s
+
+.footer
+  padding: 30px
+  justify-content: space-between
 
 
 
